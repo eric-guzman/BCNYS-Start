@@ -9,6 +9,12 @@
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #f1f5f9; min-height: 100vh; }
+ :root{
+  --border:#334155; /* matches your existing borders */
+  --dim:#64748b;    /* matches your muted text */
+  --acn:#A100FF;    /* Accenture purple */
+}
+
   .screen { display: none; min-height: 100vh; padding: 24px; align-items: center; justify-content: center; flex-direction: column; }
   .screen.active { display: flex; }
   .results-screen { display: none; min-height: 100vh; padding: 32px 20px; }
@@ -50,6 +56,7 @@
     .bcnys-of { font-size: 9px; }
     .accenture-presented { display: none; }
     .accenture-word { font-size: 16px; }
+  }
  
   /* Vote */
   .progress-bar { background: #1e293b; border-radius: 99px; height: 6px; margin-bottom: 36px; overflow: hidden; }
@@ -137,7 +144,6 @@
   .icon-btn:hover { background: #1e293b; color: #f1f5f9; }
 
   /* Co-brand row (BCNYS + Accenture) */
-  .cobrand { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
   .brand-chip { display: flex; align-items: center; gap: 10px; color: #94a3b8; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
   .brand-sep { width: 1px; height: 28px; background: #334155; }
   .presented-by { color: #64748b; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
@@ -170,7 +176,7 @@
     <span class="accenture-word">accenture</span>
   </div>
 </div>
- >
+ 
  
     <h1>New York's AI Moment:<br><span>Workforce, Competitiveness &amp;<br>What Business Leaders Must Do Now</span></h1>
     <p class="sub">5-question anonymous AI readiness check.<br>No login · No names · Aggregated results only.</p>
